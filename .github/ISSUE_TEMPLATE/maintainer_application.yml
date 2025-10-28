@@ -1,0 +1,152 @@
+name: "⚡ VoltageOS Maintainership"
+description: "Apply to become an official maintainer for VoltageOS."
+title: "[Maintainer Application] Device Name - Your Name"
+labels: ["maintainer application"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # VoltageOS Maintainer Application
+        Thank you for your interest in becoming a maintainer for VoltageOS!  
+        Please carefully fill out the details below.
+
+        ## ✅ **Requirements:**
+        - Prior experience in ROM building
+        - Publicly available device sources (Device Tree, Kernel, Vendor)
+        - Active community presence and regular updates
+
+        ## 📋 **Basic Criteria:**
+        - Applicants can only maintain one custom ROM (official or unofficial) alongside VoltageOS.
+        - Basic Git knowledge is mandatory.
+        - Applicants must be able to independently fix device issues and bugs.
+        - Applicants must own the device they are applying for.
+        - Applicants must maintain an unofficial VoltageOS build for at least 2 months with regular monthly updates.
+
+        ⚠️ **Note:** Incomplete applications will be rejected.
+
+  - type: input
+    id: name
+    attributes:
+      label: "🛠 Your Name"
+      description: "Enter your full name or alias."
+      placeholder: "Kanishk"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: "📱 Device Name & Codename"
+      description: "Which device are you planning on maintaining?"
+      placeholder: "Redmi Note 10 Pro (sweet)"
+    validations:
+      required: true
+
+  - type: input
+    id: telegram
+    attributes:
+      label: "📲 Telegram Username"
+      description: "Your Telegram username."
+      placeholder: "@yourusername"
+    validations:
+      required: true
+
+  - type: input
+    id: github
+    attributes:
+      label: "🔗 GitHub Profile"
+      description: "Link to your GitHub profile."
+      placeholder: "https://github.com/yourusername"
+    validations:
+      required: true
+
+  - type: input
+    id: maintenance_experience
+    attributes:
+      label: "📊 Maintenance Experience"
+      description: "How many ROMs are you currently maintaining? (Official + Unofficial)"
+      placeholder: "e.g., 3 ROMs total"
+    validations:
+      required: true
+
+  - type: input
+    id: roms_list
+    attributes:
+      label: "📝 Currently Maintained ROMs"
+      description: "List all ROMs you currently maintain (include both official and unofficial)"
+      placeholder: "ROM Names"
+    validations:
+      required: true
+
+  - type: input
+    id: vos_unofficial
+    attributes:
+      label: "How long have you been maintaining VoltageOS unofficial"
+      description: "How long have you been maintaining VoltageOS unofficial for the said device?"
+    validations:
+      required: true
+      
+  - type: input
+    id: selinux
+    attributes:
+      label: "📱 Device Selinux status"
+      description: "Tell your device Selinux status."
+      placeholder: "Enforcing or Permissive"
+    validations:
+      required: true
+
+  - type: input
+    id: build_link
+    attributes:
+      label: "📦 Latest Build Link"
+      description: "Link to your most recent VoltageOS unofficial build"
+      placeholder: "https://sourceforge.net/projects/your-builds"
+    validations:
+      required: true
+
+  - type: input
+    id: screenshot_proof
+    attributes:
+      label: "🖼️ Build Verification"
+      description: "Link to screenshots proving your build works (About Phone, features working)"
+      placeholder: "https://imgur.com/a/your-screenshots"
+    validations:
+      required: true
+
+  - type: input
+    id: device_tree
+    attributes:
+      label: "🗂 Device Tree Source"
+      description: "Provide a public link to your device tree source."
+      placeholder: "https://github.com/yourusername/device_xxx"
+    validations:
+      required: true
+
+  - type: input
+    id: kernel_source
+    attributes:
+      label: "📁 Kernel Source"
+      description: "Provide a public link to your kernel source."
+      placeholder: "https://github.com/yourusername/kernel_xxx"
+    validations:
+      required: true
+
+  - type: input
+    id: vendor_source
+    attributes:
+      label: "📦 Vendor Source"
+      description: "Provide a public link to your vendor source."
+      placeholder: "https://github.com/yourusername/vendor_xxx"
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: "⚠️ Agreement"
+      description: "By submitting this application, you agree to the following:"
+      options:
+        - label: "I understand that the only benefit of official maintainership is the ability to post my builds to the official channel, and I accept this."
+          required: true
