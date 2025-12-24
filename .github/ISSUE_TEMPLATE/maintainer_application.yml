@@ -2,7 +2,10 @@ name: "⚡ VoltageOS Maintainership"
 description: "Apply to become an official maintainer for VoltageOS."
 title: "[Maintainer Application] Device Name - Your Name"
 labels: ["maintainer application"]
-assignees: []
+assignees:
+  - KanishkTheDerp
+  - shutter-cat
+  - mrfox2003
 
 body:
   - type: markdown
