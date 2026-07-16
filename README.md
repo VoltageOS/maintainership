@@ -63,7 +63,7 @@ No source code or build files should ever be committed here.
 
 ## Support
 If you have questions about the process or need help with your submission:
-- Contact MrFox directly via [GitHub](https://github.com/mrfox2003) or [Telegram](https://t.me/mrfox2003)
+- Contact MrFox directly via [Telegram](https://t.me/mrfox2003)
 
 ---
 
