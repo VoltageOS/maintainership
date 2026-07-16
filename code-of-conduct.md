@@ -68,4 +68,4 @@ Failure to adhere to this Code of Conduct may result in warnings, temporary susp
 
 By being a part of VoltageOS, you commit to maintaining these standards and contributing to a collaborative, high-quality, and open-source environment.
 
-**Thank you for your dedication to VoltageOS! 🚀**
+**Thank you for your dedication to VoltageOS!**
