@@ -16,9 +16,10 @@ As a maintainer or team member of VoltageOS, you represent the project and play 
 - Inform the team if you are unable to maintain your device or need assistance.
 - Thoroughly test all builds and ensure they are cleanly compiled before release to minimize issues and maintain stability.
 - Maintain only 2 projects in total, including VoltageOS, to ensure quality and focus.
+- Maintainers must own the device they are maintaining.
 - Maintainers must sign their builds using their own personal keys.
 - Maintainers are not allowed to ship any rooting method (e.g., KSU) by default in the ROM.
-- All maintainers must push their device trees to the official VoltageOS device organization.
+- All maintainers must push their device trees to the official VoltageOS device organization (exceptions can be made).
 
 ---
 

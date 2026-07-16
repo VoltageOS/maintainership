@@ -17,7 +17,7 @@ body:
 
         ## **Requirements:**
         - Prior experience in ROM building
-        - Publicly available device sources (Device Tree, Kernel, Vendor)
+        - Publicly available device sources (device, kernel and vendor trees)
         - Active community presence and regular updates
 
         ## **Basic Criteria:**
@@ -34,7 +34,7 @@ body:
     attributes:
       label: "Your Name"
       description: "Enter your full name or alias."
-      placeholder: "Kanishk"
+      placeholder: "Your Name"
     validations:
       required: true
 
@@ -43,7 +43,7 @@ body:
     attributes:
       label: "Device Name & Codename"
       description: "Which device are you planning on maintaining?"
-      placeholder: "Redmi Note 10 Pro (sweet)"
+      placeholder: "Device Name (Codename)"
     validations:
       required: true
 
@@ -70,7 +70,7 @@ body:
     attributes:
       label: "Maintenance Experience"
       description: "How many ROMs are you currently maintaining? (Official + Unofficial)"
-      placeholder: "e.g., 3 ROMs total"
+      placeholder: "2 ROMs in total"
     validations:
       required: true
 
@@ -88,14 +88,15 @@ body:
     attributes:
       label: "How long have you been maintaining VoltageOS unofficial"
       description: "How long have you been maintaining VoltageOS unofficial for the said device?"
+      placeholder: "2 months"
     validations:
       required: true
       
   - type: input
     id: selinux
     attributes:
-      label: "Device Selinux status"
-      description: "Tell your device Selinux status."
+      label: "Device SELinux status"
+      description: "Tell your device SELinux status."
       placeholder: "Enforcing or Permissive"
     validations:
       required: true
@@ -113,7 +114,7 @@ body:
     id: screenshot_proof
     attributes:
       label: "Build Verification"
-      description: "Link to screenshots proving your build works (About Phone, features working)"
+      description: "Link to screenshot proving your build works (About Phone)"
       placeholder: "https://imgur.com/a/your-screenshots"
     validations:
       required: true
@@ -122,7 +123,7 @@ body:
     id: device_tree
     attributes:
       label: "Device Tree Source"
-      description: "Provide a public link to your device tree source."
+      description: "Provide a public link to your device tree source (both device-specific and common trees, if applicable)."
       placeholder: "https://github.com/yourusername/device_xxx"
     validations:
       required: true
@@ -131,7 +132,7 @@ body:
     id: kernel_source
     attributes:
       label: "Kernel Source"
-      description: "Provide a public link to your kernel source."
+      description: "Provide a public link to your kernel source (both OSS and prebuilt kernel trees, if applicable)."
       placeholder: "https://github.com/yourusername/kernel_xxx"
     validations:
       required: true
@@ -140,11 +141,19 @@ body:
     id: vendor_source
     attributes:
       label: "Vendor Source"
-      description: "Provide a public link to your vendor source."
+      description: "Provide a public link to your vendor source (both device-specific and common trees, if applicable)."
       placeholder: "https://github.com/yourusername/vendor_xxx"
     validations:
       required: true
-      
+
+  - type: input
+    id: source_patches
+    attributes:
+      label: "Changes/patches applied to the source"
+      description: "Provide a list of changes/patches applied to the source, if any."
+    validations:
+      required: true
+
   - type: checkboxes
     id: agreement
     attributes:
